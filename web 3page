@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header  {
+  text-align: left;
+  width: 23.3%;
+}
+.header1 :link {
+  padding: 5px 5px ;
+  text-align: center;
+  width: 53.3%;
+}
+.header1:hover {
+  text-decoration: underline blue;
+  }
+ .header1:active {
+  text-decoration: underline;
+}
+.header2 {
+  padding: 20px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  text-align: right;
+  width: 23.3%;
+  border-radius: 12px;
+  background-color:DodgerBlue;
+
+}
+/* .header2:hover { 
+  background-color:DodgerBlue;
+} 
+*/
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  border-radius: 12px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px 8px 10px;
+  margin-left: 6px;
+  max-width: 50%;
+  text-decoration: none;
+  border: 1px solid blue
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:blue;
+}
+.navbar {
+  width: 65%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  margin-right: 100px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 12px;
+  border: 1px solid blue
+}
+.navbar a:hover {
+  background-color:blue;
+}
+.card {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  border-radius: 12px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+div.card:hover {
+  border: 1px solid #777;
+
+ /* border: 1px solid #777;
+  border-radius: 20px;
+  text-align: center;
+  float: right;
+  */
+}
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+img {
+  border-radius: 50%;
+}
+.button3 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: blue;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/* Style the footer */
+.footer {
+  background-color: lightblue;
+  padding: auto;
+  max-width: 100%;
+}
+/* Style the topnav links 
+.topnav1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  max-width: 100%
+} */
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+.col-md-4{
+  width:33.3%;
+}
+.button4 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  text-align: right;
+  cursor: pointer;
+  width: 75%;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+<div style="display:flex;">
+<div class="header">
+  <h1>MentorVerse</h1>
+</div>
+
+<div class="header1" >
+  <a href="#">watch and learn</a>
+  <a href="#">mentors</a>
+  <a href="#">workshop</a>
+  <a href="#">on demand</a>
+  <a href="#">login</a>
+</div>
+<div class="header2">
+    <a href="#">apply as mentor</a>
+</div>
+</div>
+<div style="display:flex">
+<div class="topnav">
+  <a href="#">All</a>
+  <a href="#"> fashion</a>
+  <a href="#">desion</a>
+  <a href="#">fitness</a>
+  <a href="#">education</a>
+</div>
+<div class="navbar">
+<a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg"  width="220" height="220" >
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img.viki1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img.viki1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img_babu1.jpg" alt="Jane" width="220" height="220">
+      <div>
+        <h2>Joelene Rivera</h2>
+        <p class="title">Web Developer</p>
+        <p>A kiddo who uses bootstrap and Laravel in web</p>
+        <p>development. Currently playing around with design via</p>
+        <p>Figma</p>
+        <p><button class="button">BOOK MENTORSHIP CALL</button></p>
+        <div  class="button3" style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+<div class="row">
+  <div class="col-md-4">
+  <div>
+  <h1><br>Learn from the best.<br><br> Grow your Skill.<br><br>Get Mentors</h1>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="topnav1">
+    <a href="#"><br><br>Home<br><br></a>
+    <a href="#">About us<br><br></a>
+    <a href="#">Our Mentors<br><br></a>
+    <a href="#">Domains<br><br></a>
+    <a href="#">Blogs<br><br></a>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="topnav1" >
+    <a href="#"><br><br>Apply as Creators<br><br></a>
+    <a href="#">privacy<br><br></a>
+    <a href="#">Terms and Condition</a>
+  </div>
+  </div>
+</div>
+  <div  class="button4">
+    <a>contact with us<br></a>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>  
+  </div>
+  <p>© 2021,All rights reserved by CAN Communication Analyst Institute Private Limited<br><br></p>
+</div>
+</body>
+</html>
